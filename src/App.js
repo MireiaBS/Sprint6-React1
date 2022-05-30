@@ -3,30 +3,26 @@ import Escena from "./components/escena/escena";
 import { datos } from "./datos";
 import "./styles.css";
 import { Button1, Button2 } from "./components/styled-components/boton";
+import CambioFrase from "./components/escena/CambioFrase"
+import classNames from "classnames";
+import { useState } from "react";
 
-let fraseActual = 0;
-  function App() {
-  function Anterior() {
-    
-  }
-  function Seguent() {
-    const siguienteFrase = fraseActual+1;
-    console.log(datos[fraseActual].frase)
+function App() {
 
-  }
+  const [mark,setMark] = useState(0);
 
-  const fraseResult = datos.map((dato) => {
+  const fraseResult = datos.map((dato,i) => {
     return (
-      <Button1>
-        <Escena frase={dato.frase} />
-      </Button1>
+      <Button1 className = {classNames({active: i === mark})}>
+        <Escena frase={dato.frase} />        
+      </Button1>     
     );
+
   });
 
   return (
     <div className="mainDiv">
-      <Button2 onClick={Anterior}>Anterior</Button2>
-      <Button2 onClick={Seguent}>Següent</Button2>
+      <CambioFrase setMark={setMark} mark={mark}/>
       <div className="contentDiv">{fraseResult}</div>
     </div>
   );

@@ -20,7 +20,6 @@ export const Button2 = styled.button`
     border: 1em;
     border-radius: 2em;
     margin: 2em;
-    
 
     &:hover {
         background: orangered; 
