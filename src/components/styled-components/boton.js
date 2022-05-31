@@ -22,7 +22,7 @@ export const Button2 = styled.button`
     margin: 2em;
 
     &:hover {
-        background: orangered; 
+        background: rgb(450, 42, 80); 
         transition: all .4s ease;   
     }
 `

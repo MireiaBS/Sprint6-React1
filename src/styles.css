@@ -3,8 +3,21 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap
-
 }
+.welcomeDiv {
+  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color: rgb(139, 24, 64);
+  display: flex;
+  flex-direction: column;
+  margin: 3cm;    
+}
+
+.div2 {
+  text-align: center;
+}
+
 .contentDiv {
   display: flex;
   flex-direction: column;
