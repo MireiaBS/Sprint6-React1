@@ -15,12 +15,13 @@ export const Button1 = styled.button`
 `
 export const Button2 = styled.button`
     background: pink;
-    padding: 20px;
+    display: flex;    
+    padding: 15px;
     font-size: 1cm;
     border: 1em;
     border-radius: 2em;
     margin: 2em;
-
+    width: min-content;
     &:hover {
         background: rgb(450, 42, 80); 
         transition: all .4s ease;   

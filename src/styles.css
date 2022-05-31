@@ -2,16 +2,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .welcomeDiv {
   
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 2em;
-  color: rgb(139, 24, 64);
+  color: white;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  margin: 3cm;    
+  margin: 3cm; 
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);   
+}
+
+.btnDiv {
+  display: flex;
+  flex-direction: row;
 }
 
 .div2 {
@@ -21,6 +29,7 @@
 .contentDiv {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .active {
