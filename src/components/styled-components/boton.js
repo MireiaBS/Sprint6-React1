@@ -19,6 +19,8 @@ export const Button2 = styled.button`
     border: 0px solid #f8741; 
     display: flex;    
     padding: 12px;
+    padding-right: 30px;
+    padding-left: 30px;
     font-size: 1cm;    
     border-radius: 1em;
     margin: 1.5em;

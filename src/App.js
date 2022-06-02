@@ -47,7 +47,7 @@ function App() {
 
   const fraseResult = datos.map((dato, i) => {
     return (
-      <Button1 className={classNames({ active: i === mark })}>
+      <Button1 key={'frase'+i} className={classNames({ active: i === mark })}>
         <Escena  frase={dato.frase} />
       </Button1>
     );
